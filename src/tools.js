@@ -1,6 +1,6 @@
 import dotenv from "dotenv";
+import "dotenv/config";
 dotenv.config();
-console.log(process.env.WEATHER_API_KEY);
 
 export async function getWeather(location) {
   try {
@@ -22,7 +22,7 @@ export async function getWeather(location) {
   }
 }
 
-getWeather("Delhi");
+getWeather("nashik");
 
 export const tools = [
   {
