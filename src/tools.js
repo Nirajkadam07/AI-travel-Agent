@@ -5,10 +5,12 @@ dotenv.config();
 export async function getWeather(location) {
   try {
     const weatherUrl = new URL(
-      "https://api.openweathermap.org/data/2.5/weather",
+      "https://api.openweathermap.org/data/3.0/onecall/day_summary?lat={lat}&lon={lon}&date={date}&appid={API key}",
     );
     weatherUrl.searchParams.append("q", location);
+    weatherUrl.searchParams.append("date", "2026-12-23");
     weatherUrl.searchParams.append("appid", process.env.WEATHER_API_KEY);
+    weatherUrl.searchParams.append("units", "metric");
     const res = await fetch(weatherUrl);
     const data = await res.json();
 
