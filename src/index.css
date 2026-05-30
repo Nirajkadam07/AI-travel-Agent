@@ -5,15 +5,17 @@ body {
   font-family: "Inter", sans-serif;
   font-weight: 700;
   font-style: bold;
-  font-size: 22px;
+  font-size: 1.3rem;
 }
 
-.form-section {
+.form-section,
+.trip-section {
   width: 500px;
   margin: 0 auto;
 }
 
 .form-section,
+.trip-section,
 form,
 label,
 input {
@@ -26,7 +28,7 @@ input {
 input {
   font-weight: 700;
   font-style: bold;
-  font-size: 22px;
+  font-size: 1.3rem;
 }
 
 .input-sec-style,
@@ -50,7 +52,7 @@ input {
   color: #f2ffff;
   font-weight: 700;
   font-style: Bold;
-  font-size: 35px;
+  font-size: 2.1rem;
 }
 
 .submit-btn {
@@ -63,5 +65,40 @@ input {
   font-family: "Inter", sans-serif;
   font-weight: 700;
   font-style: bold;
-  font-size: 25px;
+  font-size: 1.5rem;
+}
+
+.trip-dates {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 15px;
+}
+
+.blue-bg {
+  background-color: #bbf7f7;
+  border-radius: 20px;
+  padding: 18px 10px;
+  box-shadow: 0 2px 5px #000000;
+}
+
+.light-font {
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1rem;
+}
+
+h1 {
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+p {
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+h3 {
+  margin: 0;
 }

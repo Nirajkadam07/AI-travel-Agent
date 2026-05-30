@@ -1,9 +1,11 @@
 import Form from "./components/Form";
+import TripPlan from "./components/TripPlan";
 
 function App() {
   return (
     <>
-      <Form />
+      {/* <Form /> */}
+      <TripPlan />
     </>
   );
 }
